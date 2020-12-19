@@ -1,0 +1,7 @@
+{% autoescape off %}
+Die folgende E-Mail-Adresse wurde mittels Double-opt-in für E-Mail-Benachrichtigungen über neue Kullo-Nachrichten bestätigt:
+
+E-Mail-Adresse: {{email}}
+Kullo-Adressen: {{addresses}}
+Datum/Zeit: {{timestamp}}
+{% endautoescape %}

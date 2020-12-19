@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Account Settings" %}{% endblock %}
+
+{% block content %}
+<h1>
+    {% blocktrans with address=kullo_user.addresses.0 %}Nice to see you, {{address}}!{% endblocktrans %}
+</h1>
+
+<p>
+    {% blocktrans trimmed with plan_name=kullo_user.plan.name plan_quota=kullo_user.plan.storage_quota|filesizeformat %}
+        You're on the plan <em>{{plan_name}}</em>, on which you can use up to {{plan_quota}} for your messages.
+    {% endblocktrans %}
+    {% blocktrans trimmed with used_percent=kullo_user.storage_used_percent|floatformat used=kullo_user.storage_used|filesizeformat %}
+        You have used {{used_percent}}% ({{used}}) of this.
+    {% endblocktrans %}
+</p>
+<p>
+    {% trans "Need more space for your messages? Want to use your own domain instead of #kullo.net? Want to support the Kullo project?" %}
+</p>
+<p>
+    <a class="button upgrade" href="https://www.kullo.net/#pricing" target="_blank">{% trans "Show available upgrades" %}</a>
+</p>
+{% endblock %}

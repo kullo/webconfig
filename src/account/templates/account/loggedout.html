@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block title %}{% trans "Goodbye" %}{% endblock %}
+
+{% block content %}
+<ul class="messages">
+    <li>{% trans "You have logged out successfully. This browser window can now be closed." %}</li>
+</ul>
+
+<p>{% trans "If you want to log in again, use your Kullo client." %}</p>
+{% endblock %}

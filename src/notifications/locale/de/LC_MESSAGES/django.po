@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-06 08:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: notifications/templates/notifications/base.html:4
+msgid "Notifications"
+msgstr "Benachrichtigungen"
+
+#: notifications/templates/notifications/cancel.html:6
+msgid "Email notifications for your Kullo account have been disabled."
+msgstr ""
+"E-Mail-Benachrichtigungen für dein Kullo-Konto sind jetzt abgeschaltet."
+
+#: notifications/templates/notifications/doi_confirm.html:6
+msgid "Your email address has been confirmed."
+msgstr "Deine E-Mail-Adresse wurde bestätigt."
+
+#: notifications/templates/notifications/doi_mail.txt:1
+#, python-format
+msgid ""
+"Please click the following link if you want to receive notifications\n"
+"for incoming Kullo messages to %(address)s:"
+msgstr ""
+"Bitte klicke auf den folgenden Link, wenn du Benachrichtigungen über\n"
+"empfangene Kullo-Nachrichten an %(address)s erhalten möchtest:"
+
+#: notifications/templates/notifications/doi_mail.txt:6
+msgid ""
+"If you don't want to receive notifications for this Kullo account, click "
+"here:"
+msgstr ""
+"Wenn du keine Benachrichtigungen für dieses Kullo-Konto erhalten möchtest, "
+"klicke hier:"
+
+#: notifications/templates/notifications/index.html:5
+msgid "Email notifications"
+msgstr "E-Mail-Benachrichtigungen"
+
+#: notifications/templates/notifications/index.html:7
+msgid "We can send you an email whenever you receive a new Kullo message."
+msgstr ""
+"Wenn du möchtest senden wir dir eine E-Mail, wenn du eine neue Kullo-"
+"Nachricht erhältst."
+
+#: notifications/templates/notifications/index.html:10
+msgid "Status"
+msgstr "Status"
+
+#: notifications/templates/notifications/index.html:13
+msgid "Current email address:"
+msgstr "Aktuelle E-Mail-Adresse:"
+
+#: notifications/templates/notifications/index.html:15
+#, python-format
+msgid "confirmed on %(confirmed)s"
+msgstr "bestätigt am %(confirmed)s"
+
+#: notifications/templates/notifications/index.html:17
+msgid "unconfirmed"
+msgstr "unbestätigt"
+
+#: notifications/templates/notifications/index.html:22
+msgid "You currently don't have email notifications set up."
+msgstr "Du erhältst aktuell keine E-Mail-Benachrichtigungen."
+
+#: notifications/templates/notifications/index.html:29
+msgid "Save"
+msgstr "Speichern"
+
+#: notifications/templates/notifications/index.html:31
+msgid "Delete"
+msgstr "Löschen"
+
+#: notifications/views.py:21
+msgid "Email"
+msgstr "E-Mail-Adresse"
+
+#: notifications/views.py:66
+msgid "Please confirm your email address"
+msgstr "Bitte bestätige deine E-Mail-Adresse"
+
+#: notifications/views.py:135
+msgid "Email notifications are now disabled."
+msgstr "E-Mail-Benachrichtigungen sind jetzt abgeschaltet."
+
+#: notifications/views.py:174
+#, python-format
+msgid "A confirmation message has been sent to %(email)s."
+msgstr "Eine Bestätigungs-E-Mail wurde an %(email)s gesendet."

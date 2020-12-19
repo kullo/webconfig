@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-06 08:33+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: account/templates/account/index.html:4
+msgid "Account Settings"
+msgstr "Einstellungen"
+
+#: account/templates/account/index.html:8
+#, python-format
+msgid "Nice to see you, %(address)s!"
+msgstr "Schön dich zu sehen, %(address)s!"
+
+#: account/templates/account/index.html:12
+#, python-format
+msgid ""
+"You're on the plan <em>%(plan_name)s</em>, on which you can use up to "
+"%(plan_quota)s for your messages."
+msgstr ""
+"Du nutzt den Tarif <em>%(plan_name)s</em>, mit dem du bis zu %(plan_quota)s "
+"für deine Nachrichten nutzen kannst."
+
+#: account/templates/account/index.html:15
+#, python-format
+msgid "You have used %(used_percent)s%% (%(used)s) of this."
+msgstr "Im Moment nutzt du %(used_percent)s%% (%(used)s)."
+
+#: account/templates/account/index.html:20
+msgid ""
+"Need more space for your messages? Want to use your own domain instead of "
+"#kullo.net? Want to support the Kullo project?"
+msgstr ""
+"Benötigst du mehr Platz für deine Nachrichten? Möchtest du deine eigene "
+"Domain anstatt #kullo.net benutzen? Möchtest du das Kullo-Projekt "
+"unterstützen?"
+
+#: account/templates/account/index.html:23
+msgid "Show available upgrades"
+msgstr "Verfügbare Tarife anzeigen"
+
+#: account/templates/account/loggedout.html:5
+msgid "Goodbye"
+msgstr "Auf Wiedersehen"
+
+#: account/templates/account/loggedout.html:9
+msgid ""
+"You have logged out successfully. This browser window can now be closed."
+msgstr "Du bist jetzt ausgeloggt. Dieses Fenster kann nun geschlossen werden."
+
+#: account/templates/account/loggedout.html:12
+msgid "If you want to log in again, use your Kullo client."
+msgstr "Wenn du dich wieder einloggen möchtest, benutze bitte die Kullo-App."

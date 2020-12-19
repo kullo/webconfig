@@ -1,0 +1,38 @@
+{% extends 'notifications/base.html' %}
+{% load i18n %}
+
+{% block content %}
+<h1>{% trans "Email notifications" %}</h1>
+<p>
+	{% trans "We can send you an email whenever you receive a new Kullo message." %}
+</p>
+
+<h2>{% trans "Status" %}</h2>
+{% if notification_form.email.value %}
+<p>
+	{% trans "Current email address:" %} {{notification_form.email.value}}
+	{% if confirmed %}
+		({% blocktrans %}confirmed on {{confirmed}}{% endblocktrans %})
+	{% else %}
+		({% trans "unconfirmed" %})
+	{% endif %}
+</p>
+{% else %}
+<p>
+	{% trans "You currently don't have email notifications set up." %}
+</p>
+{% endif %}
+
+<form action="" method="post">
+	{% csrf_token %}
+	{{notification_form.as_p}}
+	<button type="submit" name="action" value="save">{% trans "Save" %}</button>
+	{% if notification_form.email.value %}
+	<button type="submit" name="action" value="delete" form="deletion_form" class="destructive">{% trans "Delete" %}</button>
+	{% endif %}
+</form>
+<form action="" method="post" id="deletion_form">
+	{% csrf_token %}
+	{{deletion_form.as_p}}
+</form>
+{% endblock %}

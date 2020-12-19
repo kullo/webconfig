@@ -1,0 +1,22 @@
+{% load i18n %}{% blocktrans with address=addresses.0 %}Please click the following link if you want to receive notifications
+for incoming Kullo messages to {{address}}:{% endblocktrans %}
+
+{{confirm_url|safe}}
+
+{% trans "If you don't want to receive notifications for this Kullo account, click here:" %}
+
+{{cancel_url|safe}}
+
+-- 
+Kullo GmbH
+Kranzplatz 5-6
+65183 Wiesbaden
+
+Vertretungsberechtigte Geschäftsführer:
+Simon Warta, Daniel Seither
+
+Registergericht: Amtsgericht Wiesbaden
+Registernummer: HRB 27626
+
+Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
+DE294537976

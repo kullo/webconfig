@@ -1,0 +1,49 @@
+{% load compile_static %}
+{% load i18n %}
+{% load static %}
+{% load tags %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>{% block title %}{% endblock %} - Kullo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{% static 'WebConfig/global.less'|compile %}" />
+
+	{% block javascripts %}
+	{% endblock %}
+
+</head>
+<body>
+<div class="page">
+    {% if user.is_authenticated %}
+
+    {% url 'account:index' as account %}
+    {% url 'notifications:index' as notifications %}
+    <div class="menubar">
+        <ul id="menu">
+            <li class="{% active account %}">
+                <a class="menuentry" href="{{ account }}">{% trans "Account" %}</a>
+            </li>
+            <li class="{% active notifications %}">
+                <a class="menuentry" href="{{ notifications }}">{% trans "Notifications" %}</a>
+            </li>
+        </ul>
+
+        <a id="logout" class="button" href="{% url 'logout' %}">{% trans "Logout" %}</a>
+    </div>
+    {% endif %}
+
+	{% if messages %}
+	<ul class="messages">
+		{% for message in messages %}
+		<li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{message}}</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+
+	{% block content %}
+	{% endblock %}
+</div><!-- .page -->
+</body>
+</html>

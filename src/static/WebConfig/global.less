@@ -1,0 +1,161 @@
+@import "includes/_constants.less";
+@import "includes/_less_prefixer.less";
+
+
+// Reset
+// Use 'reset.css' from https://github.com/murtaugh/HTML5-Reset
+@import "includes/_reset.less";
+@import "fonts/Ubuntu/_stylesheet.less";
+
+* {
+	.box-sizing(border-box);
+}
+
+body {
+    background-color: @background;
+    color: @black;
+    font-family: "UbuntuRegular", sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+}
+
+.page {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+a.button, button {
+    display: inline-block;
+    .border-radius(7px);
+    border: 0 none;
+    padding: 0 15px;
+    line-height: 30px;
+    background-color: @blue;
+    color: @white;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "UbuntuLight", sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.7em;
+    font-size: 1.3em;
+}
+
+ul.messages {
+    max-width: 35em;
+}
+
+p {
+    margin-bottom: 1.2em;
+    max-width: 35em;
+}
+
+@media screen and (max-width: 30em) {
+    body {
+        font-size: 90%;
+    }
+}
+
+.menubar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    padding-right: 20px;
+    background: @backgroundLight;
+
+    .box-shadow(0 8px 10px rgba(0, 0, 0, 0.6));
+
+    #menu {
+        margin-top: 5px;
+        margin-left: 10px;
+
+        li {
+            display: inline-block;
+            float: left;
+            height: 40px;
+            line-height: 40px;
+            margin: 0 10px;
+            color: @gray;
+
+            a.menuentry {
+                text-decoration: none;
+                display: inline-block;        
+                height: 40px;
+                line-height: 40px;
+                padding: 0 5px;
+                color: @gray;
+            }
+            a:hover {
+                border-bottom: 3px solid @gray;
+            }
+        }
+        li.active {
+            a {
+                color: @black;
+                border-bottom: 3px solid @black;
+            }
+        }
+    }
+
+    a.button {
+        height: 30px;
+        line-height: 30px;
+        margin: 5px 15px;
+    }
+}
+
+a.button.upgrade {
+    background-color: @turquoise;
+}
+
+button.destructive {
+    background-color: @red;
+}
+
+.messages,
+.errorlist {
+    .border-radius(5px);
+    padding: 10px;
+    margin-bottom: 1em;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.messages {
+    background-color: white;
+    border-color: @grayLight;
+    color: @gray;
+}
+
+.errorlist {
+    background-color: white;
+    border-color: @red;
+    color: red;
+}
+
+.loggedout-help {
+    .screenshot {
+        width: 550px;
+        height: 350px;
+    }
+
+    .label {
+        color: @gray;
+        font-style: italic;
+    }
+}
+

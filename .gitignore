@@ -1,0 +1,20 @@
+# vim swap files
+*.swp
+
+# backup files
+*~
+
+# compiled python code
+*.pyc
+*.pyo
+
+# files containing secrets
+*_secrets.py
+
+# generated files
+/media/*
+!/media/.gitkeep
+/static/*
+!/static/.gitkeep
+/venv/*
+*.mo

@@ -1,0 +1,7 @@
+{% autoescape off %}
+Die E-Mail-Benachrichtigungen über neue Kullo-Nachrichten wurden für die folgende E-Mail-Adresse deaktiviert:
+
+E-Mail-Adresse: {{email}}
+Kullo-Adressen: {{addresses}}
+Datum/Zeit: {{timestamp}}
+{% endautoescape %}
